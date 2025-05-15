@@ -1,3 +1,6 @@
+5/15/2025 Release 3.20
+[click me to download](https://github.com/willizcool/StratagemIconsManager/releases/download/Release3.20/StratagemIconManager.zip)
+
 Stratagem Icons Manager
 Stratagem Icons Manager designed to assist with simple quick stratagem selection when in the loadout screen
 as well as allowing combining stratagem sprites from multiple packs

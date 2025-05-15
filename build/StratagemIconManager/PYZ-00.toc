@@ -1,8 +1,11 @@
-('C:\\Mod Projects\\StratagemManager\\build\\StratagemIconManager\\PYZ-00.pyz',
+('C:\\Mod '
+ 'Projects\\StratagemIconsManager\\build\\StratagemIconManager\\PYZ-00.pyz',
  [('ImageProcess',
-   'C:\\Mod Projects\\StratagemManager\\ImageProcess.py',
+   'C:\\Mod Projects\\StratagemIconsManager\\ImageProcess.py',
    'PYMODULE'),
-  ('MakePatch', 'C:\\Mod Projects\\StratagemManager\\MakePatch.py', 'PYMODULE'),
+  ('MakePatch',
+   'C:\\Mod Projects\\StratagemIconsManager\\MakePatch.py',
+   'PYMODULE'),
   ('PIL',
    'C:\\Users\\will\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PIL\\__init__.py',
    'PYMODULE'),
@@ -981,7 +984,7 @@
    'PYMODULE'),
   ('mathutils', '-', 'PYMODULE'),
   ('memoryStream',
-   'C:\\Mod Projects\\StratagemManager\\memoryStream.py',
+   'C:\\Mod Projects\\StratagemIconsManager\\memoryStream.py',
    'PYMODULE'),
   ('mimetypes',
    'C:\\Program '
@@ -2080,7 +2083,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\\Lib\\statistics.py',
    'PYMODULE'),
-  ('streamToc', 'C:\\Mod Projects\\StratagemManager\\streamToc.py', 'PYMODULE'),
+  ('streamToc',
+   'C:\\Mod Projects\\StratagemIconsManager\\streamToc.py',
+   'PYMODULE'),
   ('string',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\\Lib\\string.py',

@@ -1,6 +1,6 @@
 rm -r ./dist
 pyinstaller -F --collect-submodules "bpy" --noconsole --collect-all "bpy" --icon=./resource/deps/Helldivers.ico .\StratagemIconManager.py
-cp ./readme.txt ./dist/
+cp ./readme.md ./dist/readme.txt
 cp ./IconData.json ./dist/
 cp ./resource/deps/Helldivers.ico ./dist/
 rm ./resource/deps/save_data.json
