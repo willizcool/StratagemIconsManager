@@ -1,0 +1,106 @@
+[
+    {
+        "ARCHIVENAME": "4c2203529ff1a9c4",
+        "NAME": "5910807712535589068.png",
+		"SIZE": [4096,4096],
+        "DETAILS": [
+            
+            [[290, -10, 180], [4, 5], [13, "offense", "Orbital Precision Strike/ SEAF"]],
+            [[290, -20, 120], [9, 6], [51, "offense", "Orbital Laser"]],
+            [[290, 0, 180], [0, 6], [48, "offense", "Orbital Walking Barrage"]],
+            [[290, -20, 75], [12, 6], [17, "offense", "Orbital 120mm HE Barrage"]],
+            [[290, 0, 180], [1, 6], [49, "offense", "Orbital 380mm HE Barrage"]],
+            [[290, -20, 120], [10, 6], [47, "offense", "Orbital Gatling Barrage"]],
+            [[290, -20, 85], [11, 6], [52, "offense", "Orbital Railcannon Strike"]],
+            [[290, -20, -30], [7, 6], [16, "offense", "Orbital Airburst Strike"]],
+            [[290, -15, 110], [8, 6], [53, "offense", "Orbital Napalm Barrage"]],
+            [[290, -5, 190], [6, 5], [15, "offense", "Orbital EMS Strike"]],
+            [[290, -30, 65], [13, 6], [31, "offense", "Orbital Smoke Strike"]],
+            [[290, 0, 190], [5, 5], [14, "offense", "Orbital Gas Strike"]],
+            [[290, -16, -28], [7, 7], [21, "offense", "Eagle Strafing Run"]],
+            [[290, 0, 180], [5, 6], [20, "offense", "Eagle Cluster Bomb"]],
+            [[290, 0, 180], [2, 6], [18, "offense", "Eagle 110mm Rocket Pods"]],
+            [[290, -15, 70], [12, 7], [22, "offense", "Eagle Airstrike"]],
+            [[290, -20, 75], [13, 7], [32, "offense", "Eagle 500kg Bomb"]],
+            [[290, 0, 180], [4, 6], [19, "offense", "Eagle Napalm Airstrike"]],
+            
+            [[290, 84, -24], [7, 3], [34, "supply", "EXO-45 Patriot Exosuit"]],
+            [[290, 80, 120], [10, 2], [36, "supply", "Emancipator Exosuit"]],
+            [[290, 80, 120], [9, 2], [35, "supply", "M-102 Fast Recon Vehicle"]],
+
+			[[290, -5, 185], [4, 3], [3, "supply", "MG-43 Machine Gun"]],
+            [[290, 0, 190], [5, 3], [4, "supply", "M-105 Stalwart"]],
+            [[290, -18, -28], [7, 4], [6, "supply", "MG-206 Heavy Machine Gun"]],
+            
+            [[290, 75, 70], [12, 4], [29, "supply", "GL-21 Grenade Launcher"]],
+            [[290, 0, 190], [3, 3], [2, "supply", "Expendable Anti-Tank"]],
+            [[290, 80, 120], [10, 3], [38, "supply", "GR-8 Recoilless Rifle"]],
+            [[290, -3, 186], [2, 4], [8, "supply", "RL-77 Airburst Rocket Launcher"]],
+            [[290, 78, 120], [8, 3],  [40, "supply", "FAF-14 Spear"]],
+            [[290, -15, 110], [9, 4], [43, "supply", "MLS-4X Commando"]],
+            [[290, -15, 110], [8, 4], [41, "supply", "StA-X3 W.A.S.P. Launcher"]],
+            
+            [[290, 80, 120], [9, 3], [37, "supply", "APW-1 Anti-Materiel Rifle"]],
+            [[290, -18, 114], [10, 4], [44, "supply", "TX-41 Sterilizer"]],
+            [[290, 0, 180], [0, 4], [45, "supply", "AC-8 Autocannon"]],  
+            [[290, -2, 172], [0, 3], [39, "supply", "RS-422 Railgun"]],
+            [[290, -10, 180], [6, 3], [5, "supply", "LAS-98 Laser Cannon"]],
+            [[290, 0, 180], [1, 3], [1, "supply", "LAS-99 Quasar Cannon"]],
+            [[290, 78, 74], [11, 4], [42, "supply", "FLAM-40 Flamethrower"]],
+            [[290, 0, 180], [1, 4], [7, "supply", "ARC-3 Arc Thrower"]], 
+			[[290, 0, 180], [1, 5], [78, "supply", "CQC-1 One True Flag"]],
+
+            [[290, 70, 56], [12, 5], [30, "supply", "LIFT-850 Jump Pack"]],
+            [[290, -10, 100], [8, 5], [66, "supply", "LIFT-860 Hover Pack"]],
+            [[290, 0, 180], [0, 5], [46, "supply", "B-1 Supply Pack"]],
+            [[290, -5, 180], [6, 4], [12, "supply", "SH-20 Ballistic Shield Backpack"]],
+            [[290, -14, 64], [11, 8], [55, "supply", "SH-51 Directional Shield"]],
+            [[290, -5, 180], [5, 4], [11, "supply", "SH-32 Shield Generator Pack"]],
+            [[290, -6, 108], [8, 9], [59, "supply", "Portable Hellbomb"]],
+
+
+            [[290, 0, 180], [3, 4], [9, "supply", "AX/AR-23 \"Guard Dog\""]],
+            [[290, -6, 180], [4, 4], [10, "supply", "AX/LAS-5 \"Guard Dog\" Rover"]],
+
+			[[290, -24, 60], [13, 9], [66, "defense", "Grenadier Battlement"]],
+            [[290, -6, 108], [10, 8], [50, "defense", "E/MG-101 HMG Emplacement"]],
+            [[290, -6, 108], [9, 9], [57, "defense", "Anti-Tank Emplacement"]],
+
+            [[290, -26, 66], [12, 9], [28, "defense", "FX-12 Shield Generator Relay"]],
+            [[290, -4, 176], [2, 8], [23, "defense", "Machine Gun Sentry"]],
+            [[290, -4, 176], [3, 8], [24, "defense", "A/G-16 Gatling Sentry"]],
+            [[290, -4, 176], [4, 8], [25, "defense", "Autocannon Sentry"]],
+            [[290, -10, 110], [9, 8], [54, "defense", "A/M-12 Mortar Sentry"]],
+            [[290, -10, 180], [6, 8], [26, "defense", "A/ARC-3 Tesla Tower"]],
+            [[290, -15, 110], [8, 8], [56, "defense", "A/MLS-4X Rocket Sentry"]],
+            [[290, -12, 62], [13, 8], [33, "defense", "A/FLAM-40 Flame Sentry"]],
+            [[290, -12, -28], [7, 9], [27, "defense", "Anti-Personnel Minefield"]],
+            [[290, -12, 62], [11, 9], [58, "defense", "MD-17 Anti-Tank Mines"]],
+
+            [[290, 0, 180], [2, 7], [67, "mission", "Reinforce"]],
+            [[290, -20, 120], [10, 7], [68, "mission", "SoS Beacon"]],
+            [[290, -10, 180], [3, 5], [69, "mission", "Resupply"]],
+            [[290, 0, 175], [3, 6], [65, "mission", "Eagle Rearm"]],
+
+            [[290, -20, 75], [11, 7], [74, "mission", "SSDD/ Upload Data"]],
+            [[290, 0, 180], [5, 7], [71, "mission", "Drill (all)"]],
+            [[290, 0, 180], [4, 7], [73, "mission", "Hellbomb"]],
+            [[290, -20, 120], [8, 7], [75, "mission", "Seismic Probe"]],
+            [[290, 0, 180], [1, 7], [76, "mission", "Orbital Illumination Flare"]],
+            [[290, 0, 180], [3, 7], [77, "mission", "Dark Fluid Vessel"]]
+        ]
+    },
+    {
+        "ARCHIVENAME": "4c2203529ff1a9c4",
+        "NAME": "7929103508004695929.png",
+		"SIZE": [2048,1024],
+        "DETAILS": [
+            [[290, 118, -2], [5, 0], [60, "supply", "AX/TX-13 \"Guard Dog\" Dog Breath"]],
+            [[290, 130, -5], [3, 1], [61, "offense", "Eagle Smoke Strike"]],
+            [[290, 115, -5], [5, 1], [62, "defense", "A/M-23 EMS Mortar Sentry"]],
+            [[290, -2, -2], [0, 2], [63, "defense", "MD-I4 Incendiary Mines"]],
+            [[290, -2, -2], [1, 2], [64, "defense", "MD-8 Gas Mines"]],
+            [[290, 115, -5], [4, 1], [72, "mission", "Super Earth Flag"]]
+        ]
+    }
+]
