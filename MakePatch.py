@@ -1,9 +1,10 @@
 import os, streamToc, subprocess, shutil, json, uuid
 from streamToc import TexID, MaterialID, MeshID, CompositeMeshID
-from streamToc import Global_texconvpath
 from memoryStream import MemoryStream
 from pathlib import Path
-import zipfile,re
+import zipfile, re
+from PIL import Image
+import imageio.v2 as imageio
 
 from copy import deepcopy
 
@@ -78,12 +79,14 @@ def texture_export_png(exportlocation,object_id,backuplocation):
             dds_path = f"{tempdir}\\{filename}.dds"
             with open(dds_path, 'w+b') as f:
                 f.write(Entry.LoadedData.ToDDS())
-            subprocess.run(
-                [Global_texconvpath, "-y", "-o", directory, "-ft", "png", "-f", "R8G8B8A8_UNORM", dds_path],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                creationflags=subprocess.CREATE_NO_WINDOW  # Prevents terminal pop-up
-            )
+            image = imageio.imread(dds_path)
+            Image.fromarray(image).save(directory + filename + ".png")
+            # subprocess.run(
+            #     [Global_texconvpath, "-y", "-o", directory, "-ft", "png", "-f", "R8G8B8A8_UNORM", dds_path],
+            #     stdout=subprocess.DEVNULL,
+            #     stderr=subprocess.DEVNULL,
+            #     creationflags=subprocess.CREATE_NO_WINDOW  # Prevents terminal pop-up
+            # )
             os.remove(dds_path)
         else:
             shutil.copy(backuplocation, exportlocation)#in case archive doesnt contain an image
@@ -117,8 +120,8 @@ def SaveImagePNG(filepath, object_id):
             StingrayTex = Entry.LoadedData
             tempdir = Global_temp_directory
             print(filepath)
-            print(StingrayTex.Format)
-            subprocess.run([Global_texconvpath, "-y", "-o", tempdir, "-ft", "dds", "-dx10", "-f", StingrayTex.Format, filepath], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+            image = Image.open(filepath)
+            image.save(tempdir + ".png")
             nameIndex = filepath.rfind("\.".strip(".")) + 1
             fileName = filepath[nameIndex:].replace(".png", ".dds")
             dds_path = f"{tempdir}\\{fileName}"

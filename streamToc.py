@@ -5,6 +5,8 @@ from pathlib import Path
 import math, subprocess
 
 import bpy, bmesh, mathutils
+import imageio.v2 as imageio
+from PIL import Image
 #from bpy_extras.io_utils import ImportHelper, ExportHelper
 #from bpy.props import StringProperty, BoolProperty, IntProperty, EnumProperty, PointerProperty, CollectionProperty
 #from bpy.types import Panel, Operator, PropertyGroup, Scene, Menu
@@ -22,7 +24,6 @@ WwiseStreamID  = 5785811756662211598
 WwiseMetaDataID  = 15351235653606224144
 
 AddonPath = os.path.join(os.path.abspath(os.path.curdir),"resource")
-Global_texconvpath       = os.path.join(AddonPath,"deps\\texconv.exe")
 Global_temp_directory    = os.path.join(AddonPath,"temp")
 
 def DXGI_FORMAT(format):
@@ -124,7 +125,8 @@ def LoadStingrayTexture(ID, TocData, GpuData, StreamData, Reload, MakeBlendObjec
 
         with open(dds_path, 'w+b') as f:
             f.write(dds)
-        subprocess.run([Global_texconvpath, "-y", "-o", tempdir, "-ft", "png", "-f", "R8G8B8A8_UNORM", dds_path], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+        image = imageio.imread(dds_path)
+        Image.fromarray(image).save(png_path)
     return StingrayTex
 
 class TocEntry:
