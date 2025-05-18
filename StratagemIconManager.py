@@ -10,7 +10,7 @@ from MakePatch import Global_temp_directory
 class ImageSplitterApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Helldivers 2 Stratagem Manager v3.20")
+        self.root.title("Helldivers 2 Stratagem Manager v3.21")
         self.root.iconbitmap(os.getcwd()+"\\resource\\deps\\Helldivers.ico")
         self.root.geometry("550x650")  # Fixed size: 900x700 pixels
         self.root.minsize(600, 200)

@@ -21,6 +21,7 @@ Global_friendlynamespath = f"{AddonPath}\\hashlists\\friendlynames.txt"
 Global_depspath          = f"{AddonPath}\\deps"
 Global_archive_path      = os.path.join(AddonPath,"archives")
 Global_temp_directory    = os.path.join(ExePath,"EditableSheets")
+Global_texconvpath       = os.path.join(AddonPath,"deps\\texconv.exe")
 
 if not os.path.exists(Global_temp_directory):
     os.makedirs(Global_temp_directory)
@@ -73,7 +74,7 @@ def texture_export_png(exportlocation,object_id,backuplocation):
         if Entry != None:
             tempdir = Global_temp_directory
             filepath = exportlocation
-            filename = filepath.split("\-".replace("-", ""))[-1]
+            filename = filepath.split("\\-".replace("-", ""))[-1]
             directory = filepath.replace(filename, "")
             filename = filename.replace(".png", "")
             dds_path = f"{tempdir}\\{filename}.dds"
@@ -120,9 +121,11 @@ def SaveImagePNG(filepath, object_id):
             StingrayTex = Entry.LoadedData
             tempdir = Global_temp_directory
             print(filepath)
+            print(StingrayTex.Format)
+            subprocess.run([Global_texconvpath, "-y", "-o", tempdir, "-ft", "dds", "-dx10", "-f", StingrayTex.Format, filepath], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
             image = Image.open(filepath)
             image.save(tempdir + ".png")
-            nameIndex = filepath.rfind("\.".strip(".")) + 1
+            nameIndex = filepath.rfind("\\.".strip(".")) + 1
             fileName = filepath[nameIndex:].replace(".png", ".dds")
             dds_path = f"{tempdir}\\{fileName}"
             print(dds_path)
